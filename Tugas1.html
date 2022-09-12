@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
@@ -136,7 +138,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Tugas 1
+  Tugas Data Mining
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -355,6 +357,11 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
 <h1>Tugas 1<a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h1>
+<p><strong>Mengukur jarak (dissimilarity)</strong></p>
+<ul class="simple">
+<li><p>Ambil data dari Kaggle atau Github</p></li>
+<li><p>Ukur jarak d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -367,7 +374,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cdcfb9bc-52b3-4403-afe1-95a58a41637a">
+  <div id="df-24332c82-c185-481d-ac71-1f3c785567e3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -480,7 +487,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cdcfb9bc-52b3-4403-afe1-95a58a41637a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-24332c82-c185-481d-ac71-1f3c785567e3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -531,12 +538,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cdcfb9bc-52b3-4403-afe1-95a58a41637a button.colab-df-convert');
+          document.querySelector('#df-24332c82-c185-481d-ac71-1f3c785567e3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cdcfb9bc-52b3-4403-afe1-95a58a41637a');
+          const element = document.querySelector('#df-24332c82-c185-481d-ac71-1f3c785567e3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -586,7 +593,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-44758ff9-8112-4ff3-9cc8-3a32067d911d">
+  <div id="df-8f1eda1a-e164-4dbf-9d38-8532e1131866">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -645,7 +652,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-44758ff9-8112-4ff3-9cc8-3a32067d911d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8f1eda1a-e164-4dbf-9d38-8532e1131866')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -696,12 +703,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-44758ff9-8112-4ff3-9cc8-3a32067d911d button.colab-df-convert');
+          document.querySelector('#df-8f1eda1a-e164-4dbf-9d38-8532e1131866 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-44758ff9-8112-4ff3-9cc8-3a32067d911d');
+          const element = document.querySelector('#df-8f1eda1a-e164-4dbf-9d38-8532e1131866');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -748,7 +755,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fb8318d6-abd3-415d-bb88-199a3ad97b09">
+  <div id="df-5149a05e-788f-4209-8e1f-b7cffbe906e6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -807,7 +814,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fb8318d6-abd3-415d-bb88-199a3ad97b09')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5149a05e-788f-4209-8e1f-b7cffbe906e6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -858,12 +865,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fb8318d6-abd3-415d-bb88-199a3ad97b09 button.colab-df-convert');
+          document.querySelector('#df-5149a05e-788f-4209-8e1f-b7cffbe906e6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fb8318d6-abd3-415d-bb88-199a3ad97b09');
+          const element = document.querySelector('#df-5149a05e-788f-4209-8e1f-b7cffbe906e6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -927,7 +934,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cec12855-6aad-4e3b-8ba7-247a7fc13af5">
+  <div id="df-30b69003-807e-4d8f-ba41-1da955de0fa7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -965,7 +972,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cec12855-6aad-4e3b-8ba7-247a7fc13af5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-30b69003-807e-4d8f-ba41-1da955de0fa7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1016,12 +1023,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cec12855-6aad-4e3b-8ba7-247a7fc13af5 button.colab-df-convert');
+          document.querySelector('#df-30b69003-807e-4d8f-ba41-1da955de0fa7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cec12855-6aad-4e3b-8ba7-247a7fc13af5');
+          const element = document.querySelector('#df-30b69003-807e-4d8f-ba41-1da955de0fa7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1050,7 +1057,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c2f5d3c2-1875-49cc-961a-1aac4bd78147">
+  <div id="df-826b12bd-b9bf-4e6f-aa83-3dc01558e2fe">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1108,7 +1115,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c2f5d3c2-1875-49cc-961a-1aac4bd78147')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-826b12bd-b9bf-4e6f-aa83-3dc01558e2fe')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1159,12 +1166,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c2f5d3c2-1875-49cc-961a-1aac4bd78147 button.colab-df-convert');
+          document.querySelector('#df-826b12bd-b9bf-4e6f-aa83-3dc01558e2fe button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c2f5d3c2-1875-49cc-961a-1aac4bd78147');
+          const element = document.querySelector('#df-826b12bd-b9bf-4e6f-aa83-3dc01558e2fe');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1235,7 +1242,10 @@ title="Print to PDF"
 </div>
 </div>
 <p><strong>Dissimilarity Binary Assymetric Value Formula</strong></p>
-<p>![ff.PNG](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAA9CAYAAAB1Ju35AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASLSURBVHhe7ZvBa9tIFIf3f9JJh0AhYNiDT/FlBYEVPdQsVBCIKFTkUFMILhiRg8mhuFDMwgrD4h6CAkGHggOLcigKGJSLCwUdAoIFQQ4Cw29n5Em6TTZrS7KNXjwfCEdjOWO/T/NmJD//BAlppEDiSIHEkQKJIwUSRwokjhRIHCmQOFIgcaRA4kiBxJECifPkBMZXIeKp2NkAnpjAGMOXTQwjsbsBSIHEqYzAdNyH8VxDY7uJ/l8BhocGjDcWa2vDuxYHzaWEwCSAc9CEtt+GzR8PXEQEUnFFBEZwfjXhxj5sRYGiNGBfJAg/NNjfCoxPsThuHkUF8v4V1I+DbC/53MIz1q99ke1WmmoI/OZAfzlEFA1hcIFvRkhZ8+TEgnngIEhmh82noMDrWb+1Vw7COEX61UN/4JNYDFVqDkzP29mIM0/nG0vObWi72oOttqXg2c7Ddq0zwqP/dRqit8NHvti2dPTG/BSqPpUSGByrLIBGiUVImTlwguDUYfOfnqVPpdZDKJ6qMhUSOIGzywK328ekcOoqIPDahcFGrfLauxuhfoft15lAmUJzkHiw2JmvdnzRUIT8AuMTg6VMDa0z8aKbAPaOyhZOhdPAWqmOwMseS10q2udl5p4CI3AawTucXT50Oy2YL0zYpyESIndzqrWIuSm7cCgxBxKlUgLLkyI8GSK8EbsbwBMTuHlIgcSRAokjBRJHCiROaYF39w/l9ui2SuQIJI4USBwpkDhSIHGkQOJIgcSpoMAU0TjKamLWDcWi4AoKDGArNvy1B5LmV1FS4B1S4IxpDP+9Ce03C+19Hc2PLoZvNei/T8QB8yggMPLQ2tOhbWtonQZZ//orC9ZzA/2rRZNxCYHTBMHAQnPXRLvDHy24azoRlitwGmG4p0LdG4qqZh4UfjtJzVEkm1dgCv9dA91L1rfoy/gzQnxmQVUUqEezYt35FBcYDXQo9S4C/p6TEVrb7H2Uqu1ZnKUKnFVS11kwRQMSeK95UFsYLfwteU6BqY/2Fjs+Za/j1WWiqi350oW5b2P0TRw3l6ICxUlaM+GMY6Q3E3gfHfgL/xygHMsTmAWSfRAezNvgT0VQedX1fwiZDIyHBbi7jay4qfbL/XYNxuB/0vBXBxobcfX386s5l1oUzLj9CcBsU6F/CNe2il6ewKse6vwDiLL4DNGmLTz/cQrMgYysPDBXqr5PuTlw8sWFw+Y/nadPpYbeWDy3YpYn8LKbzTnNwfcIxJ+KBLWIwBSjQx64PKn6PkUExnDZnK8oFrzbIXphs/06QYEihTZuR1vkwszORhPu37OmxSgiMESvzvp6JFUvRgGBsQuDnaDaW0/0myI4avxrEbd6lrqISS77MH7WYB6wZTy7hOBzkvLCyflhCghkgTRZX/ofeVL1fYql0OisPbt8OLbR2m/CPHIRzv9tztJYqsAfyLGo+JFicyA2tCh4ZQITdh3GV2Wtz3kDG2M0GK0tBX2HZlHwygT6HT65N+EsfB0mKcLqUqhkLUiBxJECiSMFEkcKJI4USBwpkDhSIHGkQOJIgaQB/gFTZgBrvD9BngAAAABJRU5ErkJggg==)</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{r + s}{q + r + s}\
+\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">contingency_value</span><span class="p">):</span>
