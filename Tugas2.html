@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 2 &#8212; My sample book</title>
+    <title>Diskritisasi (Tugas 2) &#8212; My sample book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Implementasi K-NN pada datase iris ( Tugas 3 )" href="Tugas3.html" />
-    <link rel="prev" title="Tugas 1" href="Tugas1.html" />
+    <link rel="next" title="Implementasi K-NN (Tugas 3)" href="Tugas3.html" />
+    <link rel="prev" title="Dissimilarity (Tugas 1)" href="Tugas1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -117,45 +117,23 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Tugas Data Mining
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas1.html">
-   Tugas 1
+   Dissimilarity (Tugas 1)
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 2
+   Diskritisasi (Tugas 2)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas3.html">
-   Implementasi K-NN pada datase iris ( Tugas 3 )
+   Implementasi K-NN (Tugas 3)
   </a>
  </li>
 </ul>
@@ -366,7 +344,7 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Tugas 2
+   Diskritisasi (Tugas 2)
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -393,7 +371,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 2</h1>
+                <h1>Diskritisasi (Tugas 2)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -405,7 +383,7 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Tugas 2
+   Diskritisasi (Tugas 2)
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -433,8 +411,52 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
-<h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="diskritisasi-tugas-2">
+<h1>Diskritisasi (Tugas 2)<a class="headerlink" href="#diskritisasi-tugas-2" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">d5df0069828e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms)</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">timeout_ms</span><span class="o">=</span><span class="n">timeout_ms</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">105</span>       <span class="n">ephemeral</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span> 
+<span class="g g-Whitespace">    </span><span class="mi">107</span> 
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> 
+<span class="g g-Whitespace">    </span><span class="mi">122</span>   <span class="n">mountpoint</span> <span class="o">=</span> <span class="n">_os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>   <span class="n">request_id</span> <span class="o">=</span> <span class="n">send_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">171</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.7/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">97</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">99</span>     <span class="k">if</span> <span class="p">(</span><span class="n">reply</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;colab_reply&#39;</span> <span class="ow">and</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Tugas Melakukan diskritisasi</strong></p>
 <p>Carilah data yang bertipe numerik ( data klassifikasi)</p>
 <ol class="simple">
@@ -467,7 +489,7 @@ $<span class="math notranslate nohighlight">\( w=\frac{x_{min}-x_{max}}k \)</spa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8388e5a8-1b8c-4e8b-b8a2-6c460e6cdc9a">
+  <div id="df-419bc7d8-3952-4f04-9671-fd8354d5895e">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -538,7 +560,7 @@ $<span class="math notranslate nohighlight">\( w=\frac{x_{min}-x_{max}}k \)</spa
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8388e5a8-1b8c-4e8b-b8a2-6c460e6cdc9a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-419bc7d8-3952-4f04-9671-fd8354d5895e')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -589,12 +611,12 @@ $<span class="math notranslate nohighlight">\( w=\frac{x_{min}-x_{max}}k \)</spa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8388e5a8-1b8c-4e8b-b8a2-6c460e6cdc9a button.colab-df-convert');
+          document.querySelector('#df-419bc7d8-3952-4f04-9671-fd8354d5895e button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8388e5a8-1b8c-4e8b-b8a2-6c460e6cdc9a');
+          const element = document.querySelector('#df-419bc7d8-3952-4f04-9671-fd8354d5895e');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -763,7 +785,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-c1fd982a-c54e-4e35-b8cf-2119a52b417d">
+  <div id="df-32b77cd9-e576-4067-8429-253a92333637">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -834,7 +856,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c1fd982a-c54e-4e35-b8cf-2119a52b417d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-32b77cd9-e576-4067-8429-253a92333637')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -885,12 +907,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c1fd982a-c54e-4e35-b8cf-2119a52b417d button.colab-df-convert');
+          document.querySelector('#df-32b77cd9-e576-4067-8429-253a92333637 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c1fd982a-c54e-4e35-b8cf-2119a52b417d');
+          const element = document.querySelector('#df-32b77cd9-e576-4067-8429-253a92333637');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -923,7 +945,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-83a55e06-39ee-431f-b483-1acc5db6e2fc">
+  <div id="df-c2a0d91e-8a34-44a8-8cbe-81738a2d773f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -994,7 +1016,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-83a55e06-39ee-431f-b483-1acc5db6e2fc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c2a0d91e-8a34-44a8-8cbe-81738a2d773f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1045,12 +1067,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-83a55e06-39ee-431f-b483-1acc5db6e2fc button.colab-df-convert');
+          document.querySelector('#df-c2a0d91e-8a34-44a8-8cbe-81738a2d773f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-83a55e06-39ee-431f-b483-1acc5db6e2fc');
+          const element = document.querySelector('#df-c2a0d91e-8a34-44a8-8cbe-81738a2d773f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1157,7 +1179,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8935e716-58e3-4196-9f67-e7f090be089f">
+  <div id="df-95ca87fe-687b-4a2e-b15c-bea02c635566">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1228,7 +1250,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8935e716-58e3-4196-9f67-e7f090be089f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-95ca87fe-687b-4a2e-b15c-bea02c635566')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1279,12 +1301,12 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8935e716-58e3-4196-9f67-e7f090be089f button.colab-df-convert');
+          document.querySelector('#df-95ca87fe-687b-4a2e-b15c-bea02c635566 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8935e716-58e3-4196-9f67-e7f090be089f');
+          const element = document.querySelector('#df-95ca87fe-687b-4a2e-b15c-bea02c635566');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1317,7 +1339,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2a67a241-4d24-4c85-a139-576eead271da">
+  <div id="df-01bb4613-9632-4ac0-98f5-c928774e9274">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1388,7 +1410,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2a67a241-4d24-4c85-a139-576eead271da')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-01bb4613-9632-4ac0-98f5-c928774e9274')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1439,12 +1461,12 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2a67a241-4d24-4c85-a139-576eead271da button.colab-df-convert');
+          document.querySelector('#df-01bb4613-9632-4ac0-98f5-c928774e9274 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2a67a241-4d24-4c85-a139-576eead271da');
+          const element = document.querySelector('#df-01bb4613-9632-4ac0-98f5-c928774e9274');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1474,7 +1496,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-be909662-6594-43be-8b70-905b44dd58d8">
+  <div id="df-1849727a-0bc5-4aeb-9d24-daeb6992bf4d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1533,7 +1555,7 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-be909662-6594-43be-8b70-905b44dd58d8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1849727a-0bc5-4aeb-9d24-daeb6992bf4d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1584,12 +1606,12 @@ interval petal.width  : [[1.16, 1.5], [0.099, 0.2], [1.9, 2.5], [0.2, 1.16], [1.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-be909662-6594-43be-8b70-905b44dd58d8 button.colab-df-convert');
+          document.querySelector('#df-1849727a-0bc5-4aeb-9d24-daeb6992bf4d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-be909662-6594-43be-8b70-905b44dd58d8');
+          const element = document.querySelector('#df-1849727a-0bc5-4aeb-9d24-daeb6992bf4d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1828,13 +1850,13 @@ B                   76
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tugas 1</p>
+            <p class="prev-next-title">Dissimilarity (Tugas 1)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="Tugas3.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Implementasi K-NN pada datase iris ( Tugas 3 )</p>
+        <p class="prev-next-title">Implementasi K-NN (Tugas 3)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
